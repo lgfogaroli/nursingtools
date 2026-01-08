@@ -1,67 +1,53 @@
-/* Título */
+/* =================================================================== */
+/* ARQUIVO: form-index.css (COM O FORMULÁRIO MAIS LARGO)               */
+/* =================================================================== */
+
+/* --- ESTRUTURA PRINCIPAL E TÍTULOS --- */
+
+.formulario-container-novo {
+  background-color: #ffffff88;
+  border-radius: 16px;
+  /* max-width foi removido para o formulário se expandir */
+  margin: 20px 40px; /* Margem de 20px em cima/baixo e 40px nas laterais */
+  padding: 25px;
+  box-sizing: border-box;
+  transition: all 0.3s ease; /* Adiciona uma transição suave */
+}
+
 .titulo {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-align: center;
   color: #1b5e20; /* verde escuro */
   font-size: 1.8rem;
 }
 
-/* Container geral do formulário */
-.formulario-container {
-  background-color: #ffffff88;
-  border-radius: 16px;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-/* Grid de duas colunas */
-.form-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-}
-
-/* Coluna esquerda */
-.col-esquerda {
-  overflow-y: scroll;
-  background-color: #f0f4f8;
-  padding: 20px;
+.form-section {
+  background-color: #f0f4f8; /* Fundo azulado claro para contraste sutil */
+  border: 1px solid #e0e0e0;
   border-radius: 8px;
-  font-size: 15px;
-  height: 530px
+  padding: 25px;
+  margin-bottom: 25px;
 }
 
-.col-esquerda label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
+.section-title {
+  font-size: 1.4rem;
   color: #1b5e20;
-  
-}
-
-.col-esquerda select {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  margin-top: 0;
   margin-bottom: 20px;
+  border-bottom: 2px solid #1b5e20;
+  padding-bottom: 10px;
 }
 
-.info-empresa p {
-  margin: 5px 0;
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #1b5e20;
 }
 
-/* Coluna direita */
-.col-direita {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+/* --- ABAS E BOTÕES --- */
 
-/* Abas UC */
 .uc-tabs,
 .aba-tabs {
   display: flex;
@@ -89,103 +75,21 @@
   color: white;
 }
 
-/* Conteúdo da aba */
-.aba-conteudo {
-  background-color: #fafafa;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  max-height: 350px;
+/* --- SELEÇÃO DE EMPRESAS --- */
+
+.lista-empresas-novo {
+  max-height: 2000px;
   overflow-y: auto;
-}
-
-/* Scroll dentro da aba */
-.aba-conteudo::-webkit-scrollbar {
-  width: 8px;
-}
-
-.aba-conteudo::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 4px;
-}
-
-.aba-conteudo::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-/* Botão de gerar PDF */
-.btn-enviar {
+  border: 1px solid #ccc;
   padding: 15px;
-  border: none;
-  background-color: #1b5e20;
-  color: white;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  width: 100%;
-  max-width: 300px;
-  margin-left: 20px auto;
-}
-
-.btn-enviar:hover {
-  background-color: #145a1e;
-}
-
-/* RESPONSIVO */
-@media (max-width: 1024px) {
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .formulario-container {
-    padding: 15px;
-  }
-
-  .form-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .uc-tabs,
-  .aba-tabs {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .uc-tabs button,
-  .aba-tabs button {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .aba-conteudo {
-    max-height: none;
-    overflow: visible;
-  }
-
-  .btn-enviar {
-    font-size: 1rem;
-  }
-
-}
-
-/* Caixa com lista de checkboxes */
-.formulario-container .lista-empresas {
-   background-color: rgba(255, 255, 255, 0.05);
-  padding: 14px 16px;
-  border-radius: 10px;
-  margin-bottom: 24px;
+  border-radius: 4px;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-/* Cada checkbox com nome da empresa */
-.formulario-container .empresa-checkbox {
+.empresa-checkbox {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -195,19 +99,177 @@
   cursor: pointer;
   font-weight: 500;
   color: #000000;
-  line-height: 1.4;
-
 }
 
-/* Efeito hover */
-.formulario-container .empresa-checkbox:hover {
-  background-color: rgba(255, 255, 255, 0.08);
+.empresa-checkbox:hover {
+  background-color: #e9eef2;
 }
 
-/* Estilo da caixinha do checkbox */
-.formulario-container .empresa-checkbox input[type="checkbox"] {
-  accent-color: #1e90ff;
+.empresa-checkbox input[type="checkbox"] {
+  accent-color: #1b5e20;
   width: 16px;
   height: 16px;
   cursor: pointer;
+}
+
+/* --- SELEÇÃO DE DATAS --- */
+
+.empresa-date-picker {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.empresa-date-picker h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.date-inputs {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.date-inputs label {
+  font-weight: bold;
+  color: #333;
+}
+
+.date-inputs input[type="date"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* --- CONTEÚDO E BOTÃO FINAL --- */
+
+.aba-conteudo {
+  background-color: #fafafa;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 20px; /* Adiciona espaço após as abas */
+}
+
+.form-section-final {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.btn-enviar-novo {
+  padding: 15px 30px;
+  border: none;
+  background-color: #1b5e20;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-enviar-novo:hover {
+  background-color: #145a1e;
+}
+
+
+/* ======================================= */
+/* --- MODO NOTURNO (DARK MODE) ---        */
+/* ======================================= */
+
+body.dark-mode .formulario-container-novo {
+  background-color: #2c3e50cc; /* Azul escuro semi-transparente */
+}
+
+body.dark-mode .titulo,
+body.dark-mode .section-title {
+  color: #4caf50; /* Verde claro */
+  border-bottom-color: #4caf50;
+}
+
+body.dark-mode .form-section {
+  background-color: #34495e; /* Azul acinzentado */
+  border-color: #46627f;
+}
+
+body.dark-mode .form-label {
+  color: #81c784;
+}
+
+body.dark-mode .uc-tabs button,
+body.dark-mode .aba-tabs button {
+  border-color: #4caf50;
+  background-color: #34495e;
+  color: #4caf50;
+}
+
+body.dark-mode .uc-tabs button.ativo,
+body.dark-mode .aba-tabs button.ativo {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+body.dark-mode .lista-empresas-novo {
+  background-color: #2c3e50;
+  border-color: #46627f;
+}
+
+body.dark-mode .empresa-checkbox {
+  color: #ecf0f1; /* Cinza claro */
+}
+
+body.dark-mode .empresa-checkbox:hover {
+  background-color: #3b536b;
+}
+
+body.dark-mode .empresa-date-picker {
+  background-color: #2c3e50;
+  border-color: #46627f;
+}
+
+body.dark-mode .empresa-date-picker h4,
+body.dark-mode .date-inputs label {
+  color: #ecf0f1;
+}
+
+body.dark-mode .date-inputs input[type="date"] {
+  background-color: #34495e;
+  border-color: #46627f;
+  color: #ecf0f1;
+  color-scheme: dark; /* Ajuda o navegador a estilizar o ícone de calendário */
+}
+
+body.dark-mode .aba-conteudo {
+  background-color: #2c3e50;
+  border-color: #46627f;
+}
+
+body.dark-mode .btn-enviar-novo {
+  background-color: #4caf50;
+}
+
+body.dark-mode .btn-enviar-novo:hover {
+  background-color: #388e3c;
+}
+
+
+/* ======================================= */
+/* --- RESPONSIVIDADE ---                  */
+/* ======================================= */
+
+@media (max-width: 768px) {
+  .formulario-container-novo {
+    padding: 15px;
+    margin: 10px; /* Reduz a margem em telas pequenas */
+  }
+
+  .uc-tabs,
+  .aba-tabs {
+    flex-direction: column;
+  }
 }

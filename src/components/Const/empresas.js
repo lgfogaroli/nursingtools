@@ -75,6 +75,16 @@ const empresas = {
     descricao: "Unidade Básica de Saúde localizada na zona sul de Poços de Caldas, com estrutura completa e equipe multidisciplinar. Atua na atenção primária à saúde com foco na prevenção, promoção e recuperação da saúde, atendendo moradores dos bairros COHAB I, COHAB II e São Sebastião."
   },
 
+  "UBS Regional Leste": {
+    ra: "2025010",
+    polo: "Poços de Caldas",
+    periodo: "",
+    anoLetivo: "",
+    setor: "Atenção Primária à Saúde",
+    info: "Localizada na Av. Antônio Marinoni, Jardim São Sebastião, a UBS Regional Sul abrange os bairros COHAB I, COHAB II e São Sebastião. Conta com equipe multidisciplinar composta por três médicos, três enfermeiros, seis técnicos de enfermagem, três dentistas, três auxiliares de dentista, nutricionista, psicóloga, fisioterapeuta, setor administrativo, agentes comunitários de saúde e equipe de higienização. Estrutura com farmácia, consultórios odontológicos e médicos, salas de vacinação, coleta de sangue, curativos, psicologia, esterilização, reuniões, almoxarifado, cozinha, lavanderia e banheiros.",
+    plano: "Realização de consultas com equipe multidisciplinar, aferição de sinais vitais, controle de glicemia, antropometria, curativos, retirada de pontos, administração de medicamentos, vacinação, dispensação de medicamentos, exames preventivos, testes rápidos de ISTs, grupos de apoio e visitas domiciliares.",
+    descricao: "Unidade Básica de Saúde localizada na zona sul de Poços de Caldas, com estrutura completa e equipe multidisciplinar. Atua na atenção primária à saúde com foco na prevenção, promoção e recuperação da saúde, atendendo moradores dos bairros COHAB I, COHAB II e São Sebastião."
+  },
     "UPA - Unidade de Pronto Atendimento": {
     ra: "2025011",
     polo: "Poços de Caldas",
@@ -95,7 +105,22 @@ const empresas = {
     info: "Localizado na zona leste de Poços de Caldas, o Hospital Municipal Vereador Gilberto de Mattos foi inaugurado em setembro de 2004 e revitalizado em dezembro de 2018. Atende Poços de Caldas e municípios da região como Bandeira do Sul, Andradas, Caldas e Santa Rita de Caldas. Conta com cerca de 12 especialidades médicas, incluindo Dermatologia, Neurologia, Psiquiatria, Pediatria, Urologia, Ginecologia, Mastologia, Neonatologia, Cirurgia Geral, Cabeça e Pescoço, PTGI e Pré-Natal de Alto Risco. Oferece serviços como planejamento familiar, pequenas cirurgias, exames de imagem, eletrocardiograma, fisioterapia, fonoaudiologia e cerca de 4000 atendimentos mensais.",
     plano: "Atendimento ambulatorial especializado, consultas médicas em múltiplas especialidades, realização de pequenas cirurgias, procedimentos ginecológicos, planejamento familiar, testes laboratoriais e de imagem, fisioterapia, fonoaudiologia e pré-natal de alto risco.",
     descricao: "Hospital público localizado na zona leste de Poços de Caldas, com foco em atendimento ambulatorial especializado. Atua na atenção secundária, oferecendo consultas médicas, procedimentos cirúrgicos de pequeno porte, exames e acompanhamento pré-natal, atendendo tanto a população local quanto municípios vizinhos."
+  },
+
+  
+  "Local Teste 1": {
+    ra: "2025013",
+    polo: "Poços de Caldas",
+    periodo: "",
+    anoLetivo: "",
+    setor: "Teste",
+    info: "Teste",
+    plano: "Teste",
+    descricao: "Teste"
   }
+
+
+  
 
 }
 
