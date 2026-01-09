@@ -108,7 +108,7 @@ const empresas = {
   },
 
   
-  "Local Teste 1": {
+  "Hospital Maternidade e Pronto Socorro Santa Lúcia": {
     ra: "2025013",
     polo: "Poços de Caldas",
     periodo: "",
